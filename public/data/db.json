@@ -1,37 +1,4 @@
 {
   "events": [
-    {
-      "titre": "Smart Cities & AI",
-      "type": "atelier",
-      "dateEvent": "2025-12-26",
-      "lieu": "Universiapolis Laayoune",
-      "cover": null,
-      "id": "1"
-    },
-    {
-      "titre": "Formation en CyberSecurity ",
-      "type": "atelier",
-      "dateEvent": "2026-01-11",
-      "lieu": "Laayoune",
-      "cover": null,
-      "id": "3"
-    },
-    {
-      "id": "92b9",
-      "titre": "hello",
-      "type": "conference",
-      "dateEvent": "2026-02-21",
-      "lieu": "dre",
-      "cover": ""
-    },
-    {
-      "id": "55f9",
-      "titre": "hello",
-      "type": "exposition",
-      "dateEvent": "2026-02-20",
-      "lieu": "htththt",
-      "cover": ""
-    }
-  ],
-  "participants": []
+  ]
 }
