@@ -1,0 +1,70 @@
+<div class="col-8 mx-auto my-4">
+
+  <div class="card p-4">
+    <div class="card-body">
+      <h4 class="card-title">Add Event Informations</h4>
+
+      <form #eventForm="ngForm" (ngSubmit)="save(eventForm)">
+
+        <div class="mb-3">
+          <label class="form-label">Titre</label>
+          <input
+            type="text"
+            class="form-control"
+            name="titre"
+            [(ngModel)]="event.titre"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Type</label>
+          <select
+            class="form-select form-select-lg"
+            name="type"
+            [(ngModel)]="event.type"
+            required
+          >
+            <option value="concert">Concert</option>
+            <option value="conference">Conférence</option>
+            <option value="exposition">Exposition</option>
+            <option value="festival">Festival</option>
+            <option value="atelier">Atelier</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Date event</label>
+          <input
+            type="date"
+            class="form-control"
+            name="dateEvent"
+            [(ngModel)]="event.dateEvent"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Lieu</label>
+          <input
+            type="text"
+            class="form-control"
+            name="lieu"
+            [(ngModel)]="event.lieu"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-success">
+          Add Event
+        </button>
+
+        <button type="reset" class="btn btn-danger mx-2">
+          Cancel
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+
+</div>
