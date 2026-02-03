@@ -35,14 +35,7 @@ export class EventService {
     return this.http.put<Event>(`${this.backendURl}/${id}`,e)
   }
 
-  uploadCover(cover:File):Observable<any>{
-    const formData=new FormData()
-    formData.append('file', cover);
-    formData.append('upload_preset', 'universia_app_images'); // Cloudinary upload preset
 
-     return this.http.post<any>("https://api.cloudinary.com/v1_1/dmwogfl2d/upload",formData)
-
-
-  }
 
 }
+
